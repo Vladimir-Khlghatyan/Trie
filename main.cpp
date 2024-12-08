@@ -22,5 +22,7 @@ int main(void)
 	std::cout << "\nRemove \"hello\" : " << std::boolalpha << trie.remove("hello"   ) << std::noboolalpha << std::endl;
 	std::cout << "Remove \"worl\"  : "   << std::boolalpha << trie.remove("worl"    ) << std::noboolalpha << std::endl;
 
+	std::cout << "\nContains \"hello\" : " << std::boolalpha << trie.contains("hello") << std::noboolalpha << std::endl;
+
 	return 0;
 }

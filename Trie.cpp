@@ -37,7 +37,11 @@ bool Trie::contains(const std::string &str)
 
 bool Trie::remove(const std::string &str)
 {
-	return removeHelper(str, 0);
+	if (!contains(str)) {
+        return false;
+    }
+    removeHelper(str, 0);
+    return true;
 }
 
 bool Trie::removeHelper(const std::string &str, int depth)
